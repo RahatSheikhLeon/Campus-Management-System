@@ -5,6 +5,13 @@ public class Main {
     // ===== USERS =====
     static Map<String, String> students = new HashMap<>();
     static Map<String, String> admins = new HashMap<>();
+    
+    static Map<String, List<String>> studentCourses = new HashMap<>();
+    static Map<String, Double> results = new HashMap<>();
+    static Map<String, Integer> attendance = new HashMap<>();
+    static Map<String, Double> fees = new HashMap<>();
+    static List<String> notices = new ArrayList<>();
+
 
 
     static Scanner sc = new Scanner(System.in);
@@ -48,9 +55,17 @@ public class Main {
         String pass = sc.nextLine();
 
         if (admins.containsKey(id) && admins.get(id).equals(pass)) {
-            // adminDashboard();
+            adminDashboard();
         } else {
             System.out.println("Invalid Admin!");
+        }
+    }
+
+     static void adminDashboard() {
+
+        while (true) {
+
+
         }
     }
 
@@ -70,6 +85,8 @@ public class Main {
             System.out.println("Invalid Student!");
         }
     }
+
+    
 
 
 }
