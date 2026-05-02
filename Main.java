@@ -65,6 +65,17 @@ public class Main {
 
         while (true) {
 
+           System.out.println("\n=== ADMIN DASHBOARD ===");
+            System.out.println("1. View Student Courses");
+            System.out.println("2. Mark Attendance");
+            System.out.println("3. Add/Update Result");
+            System.out.println("4. Add Notice");
+            System.out.println("5. Check Fee");
+            System.out.println("6. Logout");
+
+            System.out.print("Choose: ");
+            int ch = sc.nextInt();
+            sc.nextLine();
 
         }
     }
