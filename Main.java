@@ -77,6 +77,42 @@ public class Main {
             int ch = sc.nextInt();
             sc.nextLine();
 
+            switch (ch) {
+
+                case 1:
+                    System.out.println(studentCourses);
+                    break;
+
+                case 2:
+                    System.out.print("Student ID: ");
+                    String aid = sc.nextLine();
+                    attendance.put(aid, attendance.getOrDefault(aid, 0) + 1);
+                    System.out.println("Attendance marked!");
+                    break;
+
+                case 3:
+                    System.out.print("Student ID: ");
+                    String rid = sc.nextLine();
+                    System.out.print("Marks: ");
+                    double mark = sc.nextDouble();
+                    sc.nextLine();
+                    results.put(rid, mark);
+                    System.out.println("Result updated!");
+                    break;
+
+                case 4:
+                    System.out.print("Notice: ");
+                    notices.add(sc.nextLine());
+                    System.out.println("Notice added!");
+                    break;
+
+                case 5:
+                    System.out.println(fees);
+                    break;
+
+                case 6:
+                    return;
+            }
         }
     }
 
