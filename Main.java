@@ -132,7 +132,28 @@ public class Main {
             System.out.println("Invalid Student!");
         }
     }
+static void studentDashboard(String id) {
 
+        while (true) {
+
+            System.out.println("\n=== STUDENT DASHBOARD ===");
+            System.out.println("1. Add Course");
+            System.out.println("2. My Courses");
+            System.out.println("3. View Result");
+            System.out.println("4. View Notice");
+            System.out.println("5. Pay Fee");
+            System.out.println("6. Logout");
+
+            System.out.print("Choose: ");
+            int ch = sc.nextInt();
+            sc.nextLine();
+
+            switch (ch) {
+           
+            }
+        }
+    }
+}
     
 
 
