@@ -149,7 +149,17 @@ static void studentDashboard(String id) {
             sc.nextLine();
 
             switch (ch) {
-           
+
+           case 3:
+                    System.out.println("Your Result: " + results.getOrDefault(id, 0.0));
+                    break;
+                
+                case 4:
+                    System.out.println("Notices:");
+                    for (String n : notices) {
+                        System.out.println("- " + n);
+                    }
+                    break;
             }
         }
     }
@@ -157,4 +167,3 @@ static void studentDashboard(String id) {
     
 
 
-}
