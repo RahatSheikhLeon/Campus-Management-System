@@ -149,7 +149,17 @@ static void studentDashboard(String id) {
             sc.nextLine();
 
             switch (ch) {
-                // mahabuba
+            case 2:
+                    System.out.println("=== My Courses ===");
+
+                    if (studentCourses.containsKey(id)) {
+                        for (String c : studentCourses.get(id)) {
+                            System.out.println("- " + c);
+                        }
+                    } else {
+                        System.out.println("No courses enrolled yet!");
+                    }
+                    break;
            case 3:
                     System.out.println("Your Result: " + results.getOrDefault(id, 0.0));
                     break;
