@@ -127,7 +127,7 @@ public class Main {
         String pass = sc.nextLine();
 
         if (students.containsKey(id) && students.get(id).equals(pass)) {
-            // studentDashboard(id);
+            studentDashboard(id);
         } else {
             System.out.println("Invalid Student!");
         }
