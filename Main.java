@@ -180,6 +180,17 @@ static void studentDashboard(String id) {
                         System.out.println("- " + n);
                     }
                     break;
+                    case 5:
+                    System.out.print("Pay Amount: ");
+                    double amt = sc.nextDouble();
+                    sc.nextLine();
+
+                    fees.put(id, fees.getOrDefault(id, 0.0) + amt);
+                    System.out.println("Fee Paid!");
+                    break;
+
+                case 6:
+                    return;
             }
         }
     }
