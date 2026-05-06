@@ -149,6 +149,16 @@ static void studentDashboard(String id) {
             sc.nextLine();
 
             switch (ch) {
+                case 1:
+                            System.out.print("Course Name: ");
+                            String course = sc.nextLine();
+
+                            studentCourses.putIfAbsent(id, new ArrayList<>());
+                            studentCourses.get(id).add(course);
+
+                            System.out.println("Course added!");
+                            break;
+
             case 2:
                     System.out.println("=== My Courses ===");
 
